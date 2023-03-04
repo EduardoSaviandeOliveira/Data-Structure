@@ -11,7 +11,15 @@ typedef struct {
 
 List new_list(int size);
 
-void include_value(List *list, char character);
+void add_item(List *list, char character);
+
+void remove_item(List *list, int positon);
+
+char get_position(List *list, char character);
+
+char get_item(List *list, int position);
+
+char get_last_item(List *list);
 
 void print_list(List *list);
 

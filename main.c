@@ -3,12 +3,12 @@
 int main() {
     List list = new_list(6);
 
-    include_value(&list, 'I');
-    include_value(&list, 'T');
-    include_value(&list, 'A');
-    include_value(&list, 'J');
-    include_value(&list, 'A');
-    include_value(&list, 'I');
+    add_item(&list, 'I');
+    add_item(&list, 'T');
+    add_item(&list, 'A');
+    add_item(&list, 'J');
+    add_item(&list, 'A');
+    add_item(&list, 'I');
 
     print_list(&list);
 

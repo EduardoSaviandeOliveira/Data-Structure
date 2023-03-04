@@ -13,3 +13,12 @@ To see memory leaks with Valgrind
 ```
 gcc -g -O1 FreeCell/main.c -pipe -Wall -Wextra -std=c11 main.c List/*.c -o main && valgrind --leak-check=yes main && rm main
 ```
+
+- inicializarLista
+- getUltimo
+- getValor
+- inserirFinalLista
+- inserirOrdemLista
+- mostrarLista
+- retirarLista
+- retirarLista
