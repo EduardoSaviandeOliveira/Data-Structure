@@ -16,6 +16,7 @@ int main() {
     add_item(&list2, '8');
 
     List list3 = merge_list(&list1, &list2);
+
     print_list(&list3);
 
     return 0;

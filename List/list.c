@@ -42,23 +42,22 @@ void print_list(List *list) {
 }
 
 void sort(List *list) {
-    for(int i=0;i<list->last;i++) for(int j=0;j<list->last;j++) if(get_item(list, j) > get_item(list, j+1)) swap(list, j, j+1);
+    for(int i=0;i<list->last -1;i++) for(int j=0;j<list->last - i - 1;j++) if(get_item(list, j) > get_item(list, j+1)) swap(list, j, j+1);
 }
 
 void swap(List *list, int position1, int position2) {
     char temp = list->items[position1];
-    list->items[position1] = get_item(list, position1);
-    list->items[position2] = get_item(list, position2);
+    list->items[position1] = get_item(list, position2);
+    list->items[position2] = temp;
 }
 
 List merge_list(List *list1, List *list2) {
-    List list = new_list(get_last(list1) + get_last(list2));
 
-    for(int i=0;i<list.last/2;i++) add_item(&list, get_item(list1, i));
+    List list = new_list(9);
 
-    for(int i=list.last;i<list.last;i++) add_item(&list, get_item(list2, i));
+    for(int i=0;i<list1->last;i++) add_item(&list, get_item(list1, i));
 
-    print_list(&list);
+    for(int i=0;i<list2->last;i++) add_item(&list, get_item(list2, i));
 
     sort(&list);
 
