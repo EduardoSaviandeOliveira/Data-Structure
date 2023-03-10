@@ -21,6 +21,14 @@ char get_item(List *list, int position);
 
 char get_last_item(List *list);
 
+int get_last(List *list);
+
 void print_list(List *list);
+
+void sort(List *list);
+
+void swap(List *list, int position1, int position2);
+
+List merge_list(List *list1, List *list2);
 
 #endif

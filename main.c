@@ -1,16 +1,22 @@
 #include "List/list.h"
 
 int main() {
-    List list = new_list(6);
+    List list1 = new_list(5);
+    List list2 = new_list(5);
 
-    add_item(&list, 'I');
-    add_item(&list, 'T');
-    add_item(&list, 'A');
-    add_item(&list, 'J');
-    add_item(&list, 'A');
-    add_item(&list, 'I');
+    add_item(&list1, '1');
+    add_item(&list1, '3');
+    add_item(&list1, '5');
+    add_item(&list1, '7');
+    add_item(&list1, '9');
 
-    print_list(&list);
+    add_item(&list2, '2');
+    add_item(&list2, '4');
+    add_item(&list2, '6');
+    add_item(&list2, '8');
+
+    List list3 = merge_list(&list1, &list2);
+    print_list(&list3);
 
     return 0;
 }
