@@ -52,7 +52,6 @@ void swap(List *list, int position1, int position2) {
 }
 
 List merge_list(List *list1, List *list2) {
-
     List list = new_list(9);
 
     for(int i=0;i<list1->last;i++) add_item(&list, get_item(list1, i));
