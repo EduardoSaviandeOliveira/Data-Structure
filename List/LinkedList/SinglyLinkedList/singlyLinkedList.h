@@ -13,11 +13,11 @@ typedef struct {
 
 SinglyLinkedList *NewSinglyLinkedList();
 
-void AddItem(SinglyLinkedList *singlyLinkedList);
+void AddItem(SinglyLinkedList *singlyLinkedList, int item);
 
 void Append(SinglyLinkedList *singlyLinkedList);
 
-void DeleteItem(SinglyLinkedList *singlyLinkedList);
+void DeleteItem(SinglyLinkedList *singlyLinkedList, int position);
 
 int GetItem();
 

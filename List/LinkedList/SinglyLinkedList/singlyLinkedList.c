@@ -12,15 +12,15 @@ SinglyLinkedList *NewSinglyLinkedList() {
 }
 
 /// in order
-void AddItem(SinglyLinkedList *singlyLinkedList) {
-
+void AddItem(SinglyLinkedList *singlyLinkedList, int item) {
+    SinglyLinkedNode node = malloc(SinglyLinkedNode);
 }
 
 void Append(SinglyLinkedList *singlyLinkedList) {
 
 }
 
-void DeleteItem(SinglyLinkedList *singlyLinkedList) {
+void DeleteItem(SinglyLinkedList *singlyLinkedList, int position) {
 
 }
 
